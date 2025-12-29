@@ -1,8 +1,6 @@
-//////////////////////////////////
     Chart.register(ChartDataLabels);
     Chart.register(window['chartjs-plugin-annotation']);
 ///////////////////////////////////////////////////////
-/////////////////////////////////d/
 async function populate() {
     const request = new Request('football2024.json');
     const response = await fetch(request);
@@ -358,4 +356,5 @@ function winnerSort() {
          personPicker(person8, p8, gamesPerWeek, p8Weekly, p8Points, p8Total, WW8, p8rank, 7);
          personPicker(person9, p9, gamesPerWeek, p9Weekly, p9Points, p9Total, WW9, p9rank, 8);
 }}
+
 populate()
