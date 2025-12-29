@@ -6,19 +6,35 @@
         <title>About Page</title>
         <link href = "style.css" rel="stylesheet">
                 <link rel="icon" href="cursor.svg">
+            <style>
+                #list {
+                    background-color: revert;
+                    display: block;
+                    list-style: circle;
+                    list-style-position: outside;
+                    padding: 10px;
+                    list-style: inside square;
+                }
+                .listItem {
+                    margin: 3px;
+                    padding: 3px;
+                    display:revert;
+                    list-style-type: inside square;
+                }
+            </style>
     </head>
     <body>
         <header>
             <nav>
                  <ul>
                     <li>
-                        <a href="index.html">
+                        <a href="footballTracker.html">
                             <img src="smallFootball.png" alt="Football Logo">
                             Football-Tracker
                         </a> 
                     </li>
                     <li id="fileLbl">File:</li>
-                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="footballTracker.html">Home</a></li>
                     <li> <a href="about.html">About</a></li>
                     <li> <a href="Person.html">By-Person</a></li>
                     <li> <a href="byTeam.html" class="broken">By-Team</a></li>
@@ -31,14 +47,24 @@
         <main>
             <h1>About Page:</h1>
             <p>This was for fun. I wanted to learn how to make charts, and I 
-                thought a fun way to do that was to take some friends and take use their guesses
+                thought a fun way to do that was to take some friends and take their guesses
                 on what  football team would win each game throughout a season.
             </p>
             <p>That's it, not much else to say.</p>
-            <p>Also, if you can, use this on desktop, you won't regret it.</p>
+            
+            <h2 id="listTitle"> Features:</h2>
+                <ul id="list" aria-labelledby="listTitle">
+                    <li class="listItem">Connects to json files using fetch</li>
+                    <li class="listItem">The gray "File: " section uses the json file data to show year of the file(I would eventually show file name in another version but that would be a pain for this) </li>
+                    <li class="listItem">As long as the files are made in the same format, I can plug in data from every year</li>
+                    <li class="listItem">Made cursor a football using a svg url converter. Really cool. Should be done more often </li>
+                    <li class="listItem">Eventually figured out how to make charts using chart.js and even was able to reuse the chart function.
+                        Added the annotation/labels too</li>
+                    <li class="listItem">found a really cool confetti effect (see ranking page)</li>
+                </ul>
         </main>
         <script>
-            //jsut to say year in file
+            //just to say year in file
             async function populate() {
                 const request = new Request('football2024.json');
                 
@@ -55,6 +81,4 @@
             }
             populate()
 </script>
-
     </body>
-
