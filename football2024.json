@@ -1,0 +1,54 @@
+{   "year": 2024,
+    "numOfGames" : 285,
+    "gameOrder": ["week1", "week2", "week3","week4","week5","week6","week7","week8","week9","week10","week11","week12","week13","week14","week15","week16","week17","week18","wildCard", "divRound","confChamp", "superBowl" ],
+    "gamesPerWeek" : [16, 16, 16, 16, 14, 14, 15, 16, 15, 14, 14, 13, 16, 13, 16, 16, 16, 16, 6, 4, 2, 1],
+    "person" : [
+        
+        {"name":"Anjelica",
+        "points":214,
+        "totalRight":188,
+        "rightWeekly": [14, 8, 6, 10, 8, 11, 10, 1, 10, 10, 10, 8, 14, 11, 14, 12, 13, 9, 5, 2, 1, 1]
+        },
+        {"name": "Brandon",
+        "points": 204,
+        "totalRight":188,
+        "rightWeekly": [11, 8, 8, 9, 7, 12, 12, 10, 11, 8, 9, 10, 13, 8, 12, 10, 10, 11, 4, 3, 2, 0]
+        },
+        {"name":"Eve",
+        "points": 195 ,
+        "totalRight": 177,
+        "rightWeekly": [8, 10, 11, 11, 7, 8, 10, 11, 9, 8, 9, 6, 13, 8, 10, 11, 10, 8, 4, 2, 2, 1]
+        },
+        {"name":"Jill",
+        "points":  207 ,
+        "totalRight": 196,
+        "rightWeekly": [13, 7, 7, 8, 8, 13, 12, 11, 12, 8, 9, 9, 12, 10, 13, 11, 15, 11, 4, 2, 1, 0]
+        },
+        {"name":"Jim", 
+        "points": 212 ,
+        "totalRight":  198,
+        "rightWeekly": [13, 7, 7, 7, 8, 12, 11, 11, 13, 9, 9, 9, 13, 9, 13, 10, 14, 13, 4, 4, 1, 0]
+        },
+        { "name": "John",
+        "points": 225,
+        "totalRight":208,
+        "rightWeekly" : [15, 7, 7 ,9, 9, 14, 11, 12, 11, 9, 9, 9, 16, 11, 14, 12, 13, 11,4, 3, 1, 1]
+        },
+        {"name":"Josh",
+        "points": 187 ,
+        "totalRight": 176,
+        "rightWeekly": [11, 7, 7, 10, 10, 11, 10, 10, 11, 9, 7, 8, 8, 7, 11, 10, 10, 12, 4, 2, 1, 0] 
+        },
+        {"name":"Larry",
+        "points": 207 ,
+        "totalRight":  193,
+        "rightWeekly": [13, 6, 10, 11, 10, 13, 9, 10, 10, 9, 9, 8, 14, 10, 12, 10, 11, 12, 3, 2, 2, 0]
+        },
+        {"name":"Sam",
+        "points": 185 ,
+        "totalRight": 176,
+        "rightWeekly": [11, 7, 5, 12, 9, 7, 10, 10, 8, 9, 12, 8, 14, 7, 14, 8, 13, 7, 2, 2, 1, 0]
+        }
+    ]
+}
+  

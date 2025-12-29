@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Football Tracker</title>
+        <link href = "style.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js" type ="module" ></script>
+        <script src = "https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels" type = "module"></script>
+        <script src = "https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3.1.0/dist/chartjs-plugin-annotation.min.js" type = "module"></script>
+        <script src="footballtracker.js" type="module" defer></script>
+        <link rel="icon" href="cursor.svg">
+    </head>
+    <body>
+        <header>
+            <nav>
+                 <ul>
+                    <li>
+                        <a href="footballTracker.html">
+                            <img src="smallFootball.png" alt="Football Logo">
+                            Football-Tracker
+                        </a> 
+                    </li>
+                    <li id="fileLbl">File:</li>
+                    <li> <a href="footballTracker.html">Home</a></li>
+                    <li> <a href="about.html">About</a></li>
+                    <li> <a href="Person.html">By-Person</a></li>
+                    <li> <a href="byTeam.html" class="broken">By-Team</a></li>
+                    <li> <a href="ranking.html">Ranking</a></li>
+                    <li> <a href="prevYrs.html"class="broken">Previous-Years</a></li>                 
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="intro">
+                <h1> Main Page:</h1>
+                <p> These are the major stats from the data- like overall points, overall win ratio, etc.</p>
+            </div>
+        <hr>
+            <div class="chart">
+                <h3>Total Points:</h3>
+                <div class = "chartContainer">
+                    <canvas id="totalPoints"></canvas>
+                </div>
+                <p class = "explanation"> These are the total points from the entire season. Normal games are worth 
+                        1 point, wildcard, div round, conf champ, and superbowl are 2-5 respectively.</p>
+            </div>
+            <div class="chart">
+                <h3> Total Right:</h3>
+            <div class = "chartContainer">
+                <canvas id="totalRight"></canvas>
+            </div>
+                <p class="explanation"> This treats each game evenly as 1 point each(even the superbowl).</p>
+            </div>
+            <div class="chart">
+                <h3> Win Ratio:</h3>
+                <div class="chartContainer" id="WWChart">
+                <canvas id="WW"></canvas>
+            </div>
+                <p class="explanation"> This is the win percentage for each person.</p>
+            </div>
+        </main>
+    </body>
+  

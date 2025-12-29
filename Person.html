@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>By Person</title>
+        <link href = "style.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js" type ="module" ></script>
+        <script src = "https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels" type = "module"></script>
+        <script src = "https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation" type = "module"></script>
+         <script src="PersonPage.js" type="module" defer></script>
+                 <link rel="icon" href="cursor.svg">
+         <style>
+         </style>
+    </head>
+    <body>
+            <!-- TODO: Person Page: an option to pick a person and to show the data based off of that
+             For each person: Name: (not chart) WW, points, totalRight, rank, WWby week (chart)
+             FavoriteTeam-->
+        <header>
+            <nav>
+                 <ul>
+                    <li>
+                        <a href="footballTracker.html">
+                            <img src="smallFootball.png" alt="Football Logo">
+                            Football Tracker
+                        </a> 
+                    </li>
+                    <li id="fileLbl">File:</li>
+                    <li> <a href="footballTracker.html">Home</a></li>
+                    <li> <a href="about.html">About</a></li>
+                    <li> <a href="Person.html">By-Person</a></li>
+                    <li> <a href="byTeam.html" class="broken">By-Team</a></li>
+                    <li> <a href="ranking.html">Ranking</a></li>
+                    <li> <a href="prevYrs.html" class="broken">Previous-Years</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+        <main>
+
+        <div id="intro">
+        <h1> Person Page:</h1>
+        <p> This breaks down the data by person</p>
+        </div>
+        <hr>
+        <div id="choiceContainer">
+            <h2>Click a button to see the data:</h2>
+            <button class = "personSelect" id="p1"></button>
+            <button class = "personSelect" id="p2"></button>
+            <button class = "personSelect" id="p3"></button>
+            <button class = "personSelect" id="p4"></button>
+            <button class = "personSelect" id="p5"></button>
+            <button class = "personSelect" id="p6"></button>
+            <button class = "personSelect" id="p7"></button>
+            <button class = "personSelect" id="p8"></button>
+            <button class = "personSelect" id="p9"></button>
+
+        </div>
+        <hr>
+        <section id="personalStats">
+            <h2 class = "personList" id="personName"></h2>
+                <p class = "personList" id="points"></p>
+                <p class = "personList" id="totalRight"></p>
+                <p class = "personList" id="WW"></p>
+                <p class = "personList" id="rank"></p>
+                <p class = "personList" id="faveTeam"></p>               
+        </section>
+        <div class="chart">
+        <h3>Win Ratio By Week Throughout Season:</h3>
+        <div class = "chartContainer">
+            <canvas id="WWThroughout"></canvas>
+        </div>
+        <p class = "explanation"> This shows the win percentage week by week throughout the season.</p>
+        </div>
+        <div class ="chart" id="teamBreakdown">
+            <h3 id="title">Ranking of Teams Picked:</h3>
+
+            <p  class="team" id="1"></p>
+            <p class="team"id="2"></p>
+            <p class="team"id="3"></p>
+            <p class="team"id="4"></p>
+            <p class="team"id="5"></p>
+            <p class="team"id="6"></p>
+            <p class="team"id="7"></p>
+            <p class="team"id="8"></p>
+            <p class="team"id="9"></p>
+            <p class="team"id="10"></p>
+            <p class="team"id="11"></p>
+            <p class="team"id="12"></p>
+            <p class="team"id="13"></p>
+            <p class="team"id="14"></p>
+            <p class="team"id="15"></p>
+            <p class="team"id="16"></p>
+            <p class="team"id="17"></p>
+            <p class="team"id="18"></p>
+            <p class="team"id="19"></p>
+            <p class="team"id="20"></p>
+            <p class="team"id="21"></p>
+            <p class="team"id="22"></p>
+            <p class="team"id="23"></p>
+            <p class="team"id="24"></p>
+            <p class="team"id="25"></p>
+            <p class="team"id="26"></p>
+            <p class="team"id="27"></p>
+            <p class="team"id="28"></p>
+            <p class="team"id="29"></p>
+            <p class="team"id="30"></p>
+            <p class="team"id="31"></p>
+            <p class="team"id="32"></p>
+        </div>
+
+        </main>
+    </body>

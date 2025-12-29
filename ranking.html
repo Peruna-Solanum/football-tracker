@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Ranking</title>
+        <!-- <link href = "style.css" rel="stylesheet"> -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js" type ="module" ></script>
+        <script src = "https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels" type = "module"></script>
+        <script src = "https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3.1.0/dist/chartjs-plugin-annotation.min.js" type = "module"></script>
+        <script src="ranking.js" type="module" defer></script>
+                <link rel="icon" href="cursor.svg">
+        <style>
+            html body {
+                overflow-x: auto;
+            }
+             * {
+         cursor:url("data:image/svg+xml,%3C%3Fxml version='1.0'%3F%3E%3Csvg xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23' xmlns='http://www.w3.org/2000/svg' xmlns:cc='http://web.resource.org/cc/' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:dc='http://purl.org/dc/elements/1.1/' xmlns:svg='http://www.w3.org/2000/svg' id='svg2095' viewBox='0 0 161.67 98.176' version='1.0'%3E%3Cdefs id='defs2097'%3E%3ClinearGradient id='linearGradient3014' x1='-746.71' gradientUnits='userSpaceOnUse' y1='401.66' gradientTransform='matrix(.42762 0 0 .42762 123.92 444.08)' x2='-746.71' y2='273.73'%3E%3Cstop id='stop3853' stop-color='%23dcdcdc' offset='0'/%3E%3Cstop id='stop3855' stop-color='%23fff' offset='1'/%3E%3C/linearGradient%3E%3CradialGradient id='radialGradient3018' gradientUnits='userSpaceOnUse' cy='260.15' cx='-601.8' gradientTransform='matrix(1 0 0 1.2 0 -52.03)' r='2.5254'%3E%3Cstop id='stop3751' stop-color='%23722e00' offset='0'/%3E%3Cstop id='stop3813' stop-color='%23722e00' offset='.5'/%3E%3Cstop id='stop3753' stop-color='%23722e00' stop-opacity='0' offset='1'/%3E%3C/radialGradient%3E%3C/defs%3E%3Cg id='layer1' transform='translate(235.95 -524.7)'%3E%3Cg id='g2983'%3E%3Cpath id='path1927' style='color:%23000000' fill='%23ad4700' d='m-154.88 526.72c42.6-0.91 78.679 29.96 78.589 47.48-0.087 17.1-33.639 46.68-77.239 46.68-43.29 0-79.84-31.66-80.42-47.48-0.59-15.83 36.47-45.77 79.07-46.68z'/%3E%3Cpath id='path2817' stroke-linejoin='round' style='color:%23000000' d='m-154.98 545.09c38.76-1.61 78.158 12.55 78.689 29.11s-43.129 31.1-78.989 29.84c-36.29-1.25-78.66-20.64-78.67-30.64-0.02-10.02 40.22-26.7 78.97-28.31z' stroke='%23722e00' stroke-linecap='round' stroke-width='.85523' fill='none'/%3E%3Cpath id='rect2819' style='color:%23000000' fill='url(%23linearGradient3014)' d='m-206.65 541.97c5.32 10.96 9.03 36.91 0.07 63.21 4.36 2.78 9.13 5.22 14.11 7.47 14.02-27.44 7.75-69.76 0.31-77.92-5.11 2.08-9.83 4.44-14.49 7.24z'/%3E%3Cpath id='path2832' style='color:%23000000' fill='url(%23linearGradient3014)' d='m-117.95 614.55c6.06-2.57 11.74-5.57 16.85-8.82 12.412-19.53 9.17-45.89 0.94-62.72-5.14-3.45-10.95-6.62-17.26-9.23 8.58 13.88 13.21 56.97-0.53 80.77z'/%3E%3Cpath id='path3729' d='m-176.45 547.45c12.95-2.91 34.65-3.21 48.11-1.05' stroke='%23ececec' stroke-linecap='round' stroke-width='4.2762' fill='none'/%3E%3Cpath id='path3731' d='m-176.45 547.45c12.95-2.91 34.65-3.21 48.11-1.05' stroke='%23722e00' stroke-linecap='round' stroke-width='.47038' fill='none'/%3E%3Cpath id='path3757' style='color:%23000000' transform='matrix(.0040057 -.78395 .78395 .0040057 -375.12 79.284)' fill='url(%23radialGradient3018)' d='m-599.27 260.15a2.5254 3.0305 0 1 1 -5.05 0 2.5254 3.0305 0 1 1 5.05 0z'/%3E%3Cpath id='path3761' style='color:%23000000' transform='matrix(.0040057 -.78395 .78395 .0040057 -375.88 69.453)' fill='url(%23radialGradient3018)' d='m-599.27 260.15a2.5254 3.0305 0 1 1 -5.05 0 2.5254 3.0305 0 1 1 5.05 0z'/%3E%3Cpath id='path3765' style='color:%23000000' transform='matrix(.0040057 -.78395 .78395 .0040057 -370.31 68.617)' fill='url(%23radialGradient3018)' d='m-599.27 260.15a2.5254 3.0305 0 1 1 -5.05 0 2.5254 3.0305 0 1 1 5.05 0z'/%3E%3Cpath id='path3769' style='color:%23000000' transform='matrix(.0040057 -.78395 .78395 .0040057 -368.64 78.291)' fill='url(%23radialGradient3018)' d='m-599.27 260.15a2.5254 3.0305 0 1 1 -5.05 0 2.5254 3.0305 0 1 1 5.05 0z'/%3E%3Cpath id='path3773' style='color:%23000000' transform='matrix(.0040057 -.78395 .78395 .0040057 -361.83 78.002)' fill='url(%23radialGradient3018)' d='m-599.27 260.15a2.5254 3.0305 0 1 1 -5.05 0 2.5254 3.0305 0 1 1 5.05 0z'/%3E%3Cpath id='path3777' style='color:%23000000' transform='matrix(.0040057 -.78395 .78395 .0040057 -363.35 68.329)' fill='url(%23radialGradient3018)' d='m-599.27 260.15a2.5254 3.0305 0 1 1 -5.05 0 2.5254 3.0305 0 1 1 5.05 0z'/%3E%3Cpath id='path3781' style='color:%23000000' transform='matrix(.0040057 -.78395 .78395 .0040057 -356.22 67.825)' fill='url(%23radialGradient3018)' d='m-599.27 260.15a2.5254 3.0305 0 1 1 -5.05 0 2.5254 3.0305 0 1 1 5.05 0z'/%3E%3Cpath id='path3785' style='color:%23000000' transform='matrix(.0040057 -.78395 .78395 .0040057 -355.03 77.389)' fill='url(%23radialGradient3018)' d='m-599.27 260.15a2.5254 3.0305 0 1 1 -5.05 0 2.5254 3.0305 0 1 1 5.05 0z'/%3E%3Cpath id='path3789' style='color:%23000000' transform='matrix(.0040057 -.78395 .78395 .0040057 -348.17 77.64)' fill='url(%23radialGradient3018)' d='m-599.27 260.15a2.5254 3.0305 0 1 1 -5.05 0 2.5254 3.0305 0 1 1 5.05 0z'/%3E%3Cpath id='path3793' style='color:%23000000' transform='matrix(.0040057 -.78395 .78395 .0040057 -348.93 67.97)' fill='url(%23radialGradient3018)' d='m-599.27 260.15a2.5254 3.0305 0 1 1 -5.05 0 2.5254 3.0305 0 1 1 5.05 0z'/%3E%3Cpath id='path3797' style='color:%23000000' transform='matrix(.0040057 -.78395 .78395 .0040057 -348.88 67.863)' fill='url(%23radialGradient3018)' d='m-599.27 260.15a2.5254 3.0305 0 1 1 -5.05 0 2.5254 3.0305 0 1 1 5.05 0z'/%3E%3Cpath id='path3801' style='color:%23000000' transform='matrix(.0040057 -.78395 .78395 .0040057 -341.53 68.278)' fill='url(%23radialGradient3018)' d='m-599.27 260.15a2.5254 3.0305 0 1 1 -5.05 0 2.5254 3.0305 0 1 1 5.05 0z'/%3E%3Cpath id='path3805' style='color:%23000000' transform='matrix(.0040057 -.78395 .78395 .0040057 -341.53 77.889)' fill='url(%23radialGradient3018)' d='m-599.27 260.15a2.5254 3.0305 0 1 1 -5.05 0 2.5254 3.0305 0 1 1 5.05 0z'/%3E%3Cpath id='path3809' style='color:%23000000' transform='matrix(.0040057 -.78395 .78395 .0040057 -333.97 78.306)' fill='url(%23radialGradient3018)' d='m-599.27 260.15a2.5254 3.0305 0 1 1 -5.05 0 2.5254 3.0305 0 1 1 5.05 0z'/%3E%3Cpath id='path3747' style='color:%23000000' transform='matrix(.0040057 -.78395 .78395 .0040057 -334.25 69.125)' fill='url(%23radialGradient3018)' d='m-599.27 260.15a2.5254 3.0305 0 1 1 -5.05 0 2.5254 3.0305 0 1 1 5.05 0z'/%3E%3Cpath id='path3735' stroke-linejoin='round' style='color:%23000000' d='m-572.32 276.19a14.268 4.2931 0 1 1 -26.84 0.39' transform='matrix(-.036874 -.35978 .42761 .0021849 -314.06 335.72)' stroke='%23fff' stroke-linecap='round' stroke-width='5.3434' fill='none'/%3E%3Cpath id='path3737' stroke-linejoin='round' style='color:%23000000' d='m-572.32 276.19a14.268 4.2931 0 1 1 -26.84 0.39' transform='matrix(-.061987 -.35991 .42761 .0021849 -322.5 335.02)' stroke='%23fff' stroke-linecap='round' stroke-width='5.3434' fill='none'/%3E%3Cpath id='path3739' stroke-linejoin='round' style='color:%23000000' d='m-572.32 276.19a14.268 4.2931 0 1 1 -26.84 0.39' transform='matrix(-.061987 -.35991 .42761 .0021849 -315.91 334.52)' stroke='%23fff' stroke-linecap='round' stroke-width='5.3434' fill='none'/%3E%3Cpath id='path3741' stroke-linejoin='round' style='color:%23000000' d='m-572.32 276.19a14.268 4.2931 0 1 1 -26.84 0.39' transform='matrix(-.036874 -.35978 .42761 .0021849 -294.29 334.2)' stroke='%23fff' stroke-linecap='round' stroke-width='5.3434' fill='none'/%3E%3Cpath id='path3743' stroke-linejoin='round' style='color:%23000000' d='m-572.32 276.19a14.268 4.2931 0 1 1 -26.84 0.39' transform='matrix(-.018040 -.35969 .42761 .0021849 -276.14 334.18)' stroke='%23fff' stroke-linecap='round' stroke-width='5.3434' fill='none'/%3E%3Cpath id='path3745' stroke-linejoin='round' style='color:%23000000' d='m-572.32 276.19a14.268 4.2931 0 1 1 -26.84 0.39' transform='matrix(.0070723 -.35956 .42761 .0021849 -254.41 334.72)' stroke='%23fff' stroke-linecap='round' stroke-width='5.3434' fill='none'/%3E%3Cpath id='path3733' stroke-linejoin='round' style='color:%23000000' d='m-572.32 276.19a14.268 4.2931 0 1 1 -26.84 0.39' transform='matrix(.0070723 -.35956 .42761 .0021849 -247.07 335.19)' stroke='%23fff' stroke-linecap='round' stroke-width='5.3434' fill='none'/%3E%3Cpath id='path2400' style='color:%23000000' d='m-154.94 524.72c-21.75 0.46-41.97 8.29-56.78 18.06-7.4 4.89-13.46 10.27-17.69 15.53-4.22 5.26-6.7 10.4-6.53 15.16 0.18 4.7 2.82 9.89 7.16 15.28s10.45 10.92 17.9 15.97c14.92 10.09 35.21 18.15 57.35 18.16 22.25 0 41.9-7.54 56.061-17.29 14.166-9.75 23.137-21.52 23.188-31.37 0.026-5.07-2.458-10.6-6.657-16.16-4.198-5.56-10.177-11.15-17.5-16.15-14.642-10.01-34.702-17.66-56.502-17.19zm0.1 4c20.8-0.44 40.1 6.89 54.12 16.47 7.012 4.79 12.722 10.15 16.595 15.28s5.863 10.03 5.844 13.72c-0.037 7.24-7.905 18.81-21.438 28.12-13.531 9.32-32.461 16.57-53.811 16.57-21.16-0.01-40.76-7.78-55.09-17.47-7.17-4.85-13.01-10.16-17.04-15.16s-6.19-9.72-6.31-12.94c-0.12-3.15 1.8-7.66 5.69-12.5 3.89-4.83 9.67-9.99 16.78-14.69 14.23-9.38 33.81-16.96 54.66-17.4z'/%3E%3C/g%3E%3C/g%3E%3Cmetadata%3E%3Crdf:RDF%3E%3Ccc:Work%3E%3Cdc:format%3Eimage/svg+xml%3C/dc:format%3E%3Cdc:type rdf:resource='http://purl.org/dc/dcmitype/StillImage'/%3E%3Ccc:license rdf:resource='http://creativecommons.org/licenses/publicdomain/'/%3E%3Cdc:publisher%3E%3Ccc:Agent rdf:about='http://openclipart.org/'%3E%3Cdc:title%3EOpenclipart%3C/dc:title%3E%3C/cc:Agent%3E%3C/dc:publisher%3E%3Cdc:title%3ERugby ball%3C/dc:title%3E%3Cdc:date%3E2007-07-18T12:17:25%3C/dc:date%3E%3Cdc:description%3Eball, ball, clip art, clipart, football, football, image, leather, leather, media, png, public domain, remix, rugby, rugby, sport, sport, svg, tool, tool, %3C/dc:description%3E%3Cdc:source%3Ehttp://openclipart.org/detail/4456/rugby-ball-by-molumen%3C/dc:source%3E%3Cdc:creator%3E%3Ccc:Agent%3E%3Cdc:title%3Emolumen%3C/dc:title%3E%3C/cc:Agent%3E%3C/dc:creator%3E%3Cdc:subject%3E%3Crdf:Bag%3E%3Crdf:li%3Eball%3C/rdf:li%3E%3Crdf:li%3Eclip art%3C/rdf:li%3E%3Crdf:li%3Eclipart%3C/rdf:li%3E%3Crdf:li%3Efootball%3C/rdf:li%3E%3Crdf:li%3Eimage%3C/rdf:li%3E%3Crdf:li%3Eleather%3C/rdf:li%3E%3Crdf:li%3Emedia%3C/rdf:li%3E%3Crdf:li%3Epng%3C/rdf:li%3E%3Crdf:li%3Epublic domain%3C/rdf:li%3E%3Crdf:li%3Eremix%3C/rdf:li%3E%3Crdf:li%3Erugby%3C/rdf:li%3E%3Crdf:li%3Esport%3C/rdf:li%3E%3Crdf:li%3Esvg%3C/rdf:li%3E%3Crdf:li%3Etool%3C/rdf:li%3E%3C/rdf:Bag%3E%3C/dc:subject%3E%3C/cc:Work%3E%3Ccc:License rdf:about='http://creativecommons.org/licenses/publicdomain/'%3E%3Ccc:permits rdf:resource='http://creativecommons.org/ns%23Reproduction'/%3E%3Ccc:permits rdf:resource='http://creativecommons.org/ns%23Distribution'/%3E%3Ccc:permits rdf:resource='http://creativecommons.org/ns%23DerivativeWorks'/%3E%3C/cc:License%3E%3C/rdf:RDF%3E%3C/metadata%3E%3C/svg%3E%0A"), auto;
+        }
+        body {
+            background-color: rgb(126, 99, 73);
+            display: grid;
+            grid-template-rows: 3fr;
+            grid-template-areas: 'nav' 'body';
+            color: white;
+            font-size: 16px;
+            min-height: 60vw;
+            min-width: 60rem;
+        }
+        nav {
+            background-color: gray;
+            grid-area: 'nav'
+        }
+        a {
+            font-size: 1.5rem;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 10px 0 9px 0;
+            background-color: #333333;
+            align-items: center;
+        }
+        li {
+            display: inline;
+        }
+        ul li a {
+            margin: 1em;
+            text-decoration: none;
+            padding: 5px;
+        }
+        ul li a:hover {
+            background-color: #5f5e5e;
+            padding: 5px;
+        }
+        main {
+            min-height: 25em;
+            grid-area: 'body';
+            /* height: 100%;
+            width: 100%; */
+
+        }
+        img {
+            height: 1em;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        a:active {
+            text-decoration: none;
+            color: white;
+        }
+        #fileLbl {
+            font-size: 1.5em;
+            padding: 2px;
+            background-color: gray;
+        }
+        p {
+            font-size: 18px;
+            padding: 5px;
+        }
+        hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #ccc;
+        border-color: black;
+        margin: 1em 0;
+        padding: 0;
+        }
+        #intro {
+            text-align: center;
+        }
+        button {
+            color: rgb(0, 0, 0);
+            background-color: rgb(158, 158, 158);
+            font-size:1.1em;
+            padding: .5em;
+            margin: 5px;
+            font-family:'Times New Roman', Times, serif;
+        }
+        #personalStats {
+
+            justify-self: center;
+            text-align: center;
+        }
+
+        #personName {
+            font-size: 1.6em;
+        }
+        a:active {
+            color: red;
+        }
+        #doesntWorkLink {
+            text-decoration: underline;
+            color: blue;
+        }
+        #doesntWorkLink:hover {
+            color: darkblue;
+        }
+        #doesntWorkLink:active {
+            color: red;
+        }
+            div {
+                border: 2px solid black;
+            }
+            #tierContainer {
+
+                justify-self: center;
+                border: none;
+                width: 60em;
+                height: 30em;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                align-items: end;
+                text-align: center;
+
+
+            }
+            #tier1 {
+                height: 100%;
+                background-color: gold;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+            #tier2 {
+                height: 66%;
+                background-color: silver;
+                border-right: none;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+            #tier3 {
+                height: 33%;
+                background-color:rgb(190, 131, 62);
+                border-left: none;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+            #everyoneElse {
+                text-align: center;
+
+                min-height: 10em;
+                min-width: 40em;
+            }
+            .Title {
+                text-decoration: underline;
+            }
+            button {
+                margin: 10px;
+                background-color: rgb(128, 128, 128);
+                color: white;
+                box-shadow: 5px 5px 5px 1px rgba(66, 44, 14, 0.2),
+                                    inset 1px 1px 1px 1px rgb(163, 163, 163);
+                padding: 1em;
+                font-size: 1.5rem;
+                font-family: Georgia;
+                font-weight:bold;
+                border-radius: 10px;
+            }
+            button:active {
+                box-shadow: inset 1px 1px  1px  rgb(163, 163, 163);
+            }
+            #pageTitle {
+                color: rgb(255, 255, 255);
+                font-size: 3em;
+            }
+
+            canvas {
+            /* position: relative; */
+            position: absolute;
+              left: 15%; 
+            transform: translate(-50%); 
+             /* left: 0;
+            right: 0;
+            margin: auto;   */
+
+
+            height:40rem;
+            width: 70rem;
+            z-index: 1;
+            }
+             #confettiCanvas {
+                background-color: rgba(218, 35, 35, 0);
+            } 
+             button  {
+                position: relative;
+                /* isolation: isolate; */
+                z-index: 2;
+             }
+             #canvasContainer {
+                position: relative;
+                width: 1px;
+                left: 49.5%;
+                overflow: visible;
+                background-color: rgba(255, 255, 255, 0);
+                border: none;
+             }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                 <ul>
+                    <li>
+                        <a href="footballTracker.html">
+                            <img src="smallFootball.png" alt="Football Logo">
+                            Football-Tracker
+                        </a>
+                    </li>
+                    <li id="fileLbl">File:</li>
+                    <li> <a href="footballTracker.html">Home</a></li>
+                    <li> <a href="about.html">About</a></li>
+                    <li> <a href="Person.html">By-Person</a></li>
+                    <li> <a href="byTeam.html" class="broken">By-Team</a></li>
+                    <li> <a href="ranking.html">Ranking</a></li>
+                    <li> <a href="prevYrs.html"class = "broken">Previous-Years</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <main>
+        <div id="intro">
+                <div id="canvasContainer">
+                <canvas id="confettiCanvas"></canvas>
+                </div>
+        <h1 id="pageTitle"> Ranking:</h1>
+        <button>Click to See Ranking:</button>
+        </div>
+        <hr>
+        <div id="tierContainer">
+
+            <div id="tier2"><h1>2</h1><h1 class = "top3" id="secondPlace"></h1></div>
+            <div id="tier1"><h1>1</h1><h1 class = "top3" id="firstPlace"></h1></div>
+            <div id="tier3"><h1>3</h1><h1 class = "top3" id ="thirdPlace"></h1> </div>
+        </div>
+        <div id="everyoneElse">
+
+            <h2 class="Title">Everyone Else:</h2><!-- the list way just wasn't working tbh-->
+                <p id="fourthPlace"></p>
+                <p id="fifthPlace"></p>
+                <p id="sixthPlace"></p>
+                <p id="seventhPlace"></p>
+                <p id="eighthPlace"></p>
+                <p id="ninthPlace"></p>
+        </div>
+        </main>
+    </body>

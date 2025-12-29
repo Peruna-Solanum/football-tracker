@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>About Page</title>
+        <link href = "style.css" rel="stylesheet">
+                <link rel="icon" href="cursor.svg">
+    </head>
+    <body>
+        <header>
+            <nav>
+                 <ul>
+                    <li>
+                        <a href="footballTracker.html">
+                            <img src="smallFootball.png" alt="Football Logo">
+                            Football-Tracker
+                        </a> 
+                    </li>
+                    <li id="fileLbl">File:</li>
+                    <li> <a href="footballTracker.html">Home</a></li>
+                    <li> <a href="about.html">About</a></li>
+                    <li> <a href="Person.html">By-Person</a></li>
+                    <li> <a href="byTeam.html" class="broken">By-Team</a></li>
+                    <li> <a href="ranking.html">Ranking</a></li>
+                    <li> <a href="prevYrs.html"class="broken">Previous-Years</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>About Page:</h1>
+            <p>This was for fun. I wanted to learn how to make charts, and I 
+                thought a fun way to do that was to take some friends and take use their guesses
+                on what  football team would win each game throughout a season.
+            </p>
+            <p>That's it, not much else to say.</p>
+            <p>Also, if you can, use this on desktop, you won't regret it.</p>
+        </main>
+        <script>
+            //jsut to say year in file
+            async function populate() {
+                const request = new Request('football2024.json');
+                
+                const response = await fetch(request);
+                const stats = await response.json();
+                file(stats);
+
+                ///////////////////////////////////////////////////
+                function file (obj) {
+                const flLbl = document.getElementById('fileLbl');
+                const fileName = obj.year;
+                flLbl.textContent = "File: " + fileName;
+                }
+            }
+            populate()
+</script>
+    </body>
