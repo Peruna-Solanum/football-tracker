@@ -4,8 +4,11 @@ This website ranks how well some friends did at predicting which football teams 
 
 This project was made to practice:
 -Github Pages
+
 -retrieving data from JSON using Fetch API
+
 -visualizing data using chart.js
+
 -modules
 
 Features:
